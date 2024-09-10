@@ -6,19 +6,13 @@ public class Even {
 		int num2 = 5;
 		checkEven(num1);
 		checkEven(num2);
-
 	}
 
 	public static void checkEven(int num) {
-		if (isEvenNumber(num)) {
-			System.out.println(num + "は偶数です。//引数が" + num + "の場合");
+		if (num % 2 == 0) {
+			System.out.println(num + "は偶数です。");
 		} else {
-			System.out.println(num + "は奇数です。//引数が" + num + "の場合");
+			System.out.println(num + "は奇数です。");
 		}
 	}
-
-	public static boolean isEvenNumber(int number) {
-		return number % 2 == 0;
-	}
-
 }
