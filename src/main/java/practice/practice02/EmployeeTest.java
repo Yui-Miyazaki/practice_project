@@ -2,17 +2,14 @@ package practice.practice02;
 
 public class EmployeeTest {
 	public static void main(String[] args) {
-		Employee e1 = new Employee();
-		e1.name = "山田";
-		e1.age = 20;
+		Employee employee = new Employee();
 		
-		Employee e2 = new Employee();
-		e2.name = "鈴木";
-		e2.age = 30;
+		employee.setName("山田");
 		
-	e1.showInfo();
-	e2.showInfo();
+		employee.setAge(20);
+		
+		System.out.println("氏名：" + employee.getName());
+		System.out.println("年齢：" + employee.getAge());
 	}
-	
 
 }

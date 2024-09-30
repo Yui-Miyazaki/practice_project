@@ -1,18 +1,19 @@
 package practice.practice04;
 
-public class EmployeeTest {
+public class AnimalTest {
 	public static void main(String[] args) {
-		Employee e1 = new Employee();
-		e1.name = "山田";
-		e1.age = 20;
-		
-		Employee e2 = new Employee();
-		e2.name = "鈴木";
-		e2.age = 30;
-		
-	e1.showInfo();
-	e2.showInfo();
-	}
-	
 
+		Dog dog = new Dog("ポチ", 2, "白");
+
+		Sparrow sparrow = new Sparrow("チュン", 1, false);
+
+		dog.showInfo();
+		dog.cry();
+
+		System.out.println("-------------------------------");
+
+		sparrow.showInfo();
+		sparrow.cry();
+
+	}
 }

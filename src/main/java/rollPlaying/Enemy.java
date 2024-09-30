@@ -10,8 +10,8 @@ public Enemy(String name,int op,int dp) {
 	  this.op = op;
 	  this.dp = dp;
 }
-public String getName() {
-	return this name;
+public Enemy getName() {
+	return this ;
 }
 public int getOp() {
 	return op;
@@ -25,9 +25,9 @@ public int getDp() {
 public void setDp(int dp) {
 	this.dp = dp;
 }
-public String setName(String name) {
-	this name = name;
-}
+//public String setName(String name) {
+	//this this.name = name;
+//}
 
 public void greeting() {
 	  System.out.println(this.name + "が現れた！");

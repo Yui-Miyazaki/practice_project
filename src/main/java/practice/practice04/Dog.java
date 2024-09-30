@@ -1,22 +1,30 @@
 package practice.practice04;
 
-public class Dog {
-	public String name;
-	public int age;
-	public String furColor;
-	
+public class Dog extends Animal {
+	private String furColor;
+
+	public Dog(String name, int age, String furColor) {
+		super(name, age);
+		this.setFurColor(furColor);
+	}
+
 	public String getFurColor() {
-		
+		return furColor;
 	}
-	public void selFurcolor(String furColor) {
-		
+
+	public void setFurColor(String furColor) {
+		this.furColor = furColor;
 	}
+
 	public void showInfo() {
-		System.out.println("氏名 : " + name);
-		System.out.println("年齢 : " + age);
+		super.showInfo();
+		System.out.println("毛の色：" + this.furColor);
 	}
+
 	public void cry() {
-		
+
+		System.out.println("鳴き声：" + "ワン");
+
 	}
 
 }
